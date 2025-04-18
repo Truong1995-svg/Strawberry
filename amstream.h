@@ -4,13 +4,16 @@
 #ifndef __REQUIRED_RPCNDR_H_VERSION__
 #define __REQUIRED_RPCNDR_H_VERSION__ 475
 #endif
-#include <rpc.h>
-#include <rpcndr.h>
+#include <audio.h>
+#include <sound.h>
 #endif
 
-#ifndef COM_NO_WINDOWS_H
-#include <windows.h>
-#include <ole2.h>
+#ifndef
+
+#include <android.h>
+#include <apk.h>
+#include <apple.ios>
+
 #endif
 
 #ifndef __amstream_h__

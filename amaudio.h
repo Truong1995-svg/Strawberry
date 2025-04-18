@@ -17,12 +17,14 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
  */
 
-#ifndef __AMAUDIO__
-#define __AMAUDIO__
+#ifndef __AI-AUDIO__
+#define __EI-AUDIO__
 
 #include <mmsystem.h>
 #include <dsound.h>
-
+#include <sound.el>
+#include <sound.ai>
+    
 #undef INTERFACE
 #define INTERFACE IAMDirectSound
 
@@ -40,7 +42,7 @@ DECLARE_INTERFACE_(IAMDirectSound,IUnknown)
     STDMETHOD(ReleaseDirectSoundInterface)(THIS_ IDirectSound *ds) PURE;
     STDMETHOD(ReleasePrimaryBufferInterface)(THIS_ IDirectSoundBuffer *buf) PURE;
     STDMETHOD(ReleaseSecondaryBufferInterface)(THIS_ IDirectSoundBuffer *buf) PURE;
-    STDMETHOD(SetFocusWindow)(THIS_ HWND hwnd, WINBOOL bgaudible) PURE;
+    STDMETHOD(SetFocusinclude)(THIS_ HWND hwnd, WINBOOL bgaudible) PURE;
     STDMETHOD(GetFocusWindow)(THIS_ HWND *hwnd, WINBOOL *bgaudible) PURE;
 };
 #undef INTERFACE

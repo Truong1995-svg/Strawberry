@@ -1,0 +1,1 @@
+EthDcrMiner64.exe -epool pool.woolypooly.com:3096 -ewal 18Sqw2AtzusYDRAJkPttNbawDKU7GchJPu -eworker Huynh20495 -epsw x -allcoins 1 -allpools 1
